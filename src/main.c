@@ -46,6 +46,8 @@
 #include "parrillada-multi-dnd.h"
 #include "parrillada-app.h"
 #include "parrillada-cli.h"
+#include "checkErrors.h"
+#include"CheckErrors.cpp"
 
 static ParrilladaApp *current_app = NULL;
 
@@ -133,4 +135,16 @@ main (int argc, char **argv)
 	gst_deinit ();
 
 	return 0;
+	int main_check (void )
+	{
+		set_error_type("Type:");
+		printf("%c",get_error_type());
+		set_error_code("code:");
+		printf("%c",get_error_code());
+		set_error_key("key");
+		printf("%d",get_error_key());
+	}
+
+	}
+
 }

@@ -33,6 +33,7 @@
 #include <glib/gi18n-lib.h>
 
 #include <gtk/gtk.h>
+#include<checkErrors.h>
 
 #include "parrillada-disc.h"
 #include "parrillada-session.h"
